@@ -1,0 +1,6 @@
+var name1 = prompt("enter the name of the boy");
+var name2 = prompt("enter the name of the girl");
+alert("performing love calculation");
+var n = Math.random();
+n = Math.ceil(n*100);
+alert("The love percentage between " + name1 +"and  " + name2 + "is " + n );
