@@ -1,0 +1,32 @@
+//javascript code to find the timeleft assuming you lived upto 90
+
+function lifeInWeeks(age) {
+    
+var lifeLeftWeek = ((90 * 52) - (age * 52));
+console.log("You have " + lifeLeftWeek + " week left");
+
+}
+
+function lifeInyear(age){
+    
+    var lifeLeftYear = 90 - age;
+    console.log("You have " +lifeLeftYear + " year left");
+}
+
+function lifeInMonth(age){
+    
+    var lifeLeftMonth = ((90 * 12) - (age * 12));
+    console.log("You have " + lifeLeftMonth + " month left");
+}
+
+function lifeInDay(age){
+    
+    var lifeLeftDay = ((90 * 365) - (age * 365));
+    console.log("You have " + lifeLeftDay + " Day left");
+}
+
+var userAge = prompt("enter your age");
+console.log(lifeInyear(userAge));
+console.log(lifeInMonth(userAge));
+console.log(lifeInWeeks(userAge));
+console.log(lifeInDay(userAge));
