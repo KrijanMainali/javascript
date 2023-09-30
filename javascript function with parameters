@@ -1,0 +1,7 @@
+function getMilk(money)
+{
+    var bottles =Math.floor( money/1.5);
+    return bottles;
+}
+
+console.log("you can get "+getMilk(10)+" Bottles of milk");
