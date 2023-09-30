@@ -1,0 +1,8 @@
+var weight = prompt("enter your weight in kg");
+var height = prompt("enter your height in cm");
+console.log("your BMI is " + BMI(weight, height));
+
+function BMI( a , b)
+ {
+     return (a/(b*b));
+ }
