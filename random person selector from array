@@ -1,0 +1,10 @@
+//wap to randomly select a person who is going to pay for lunch
+
+function whosPaying(names) {
+var name = ["Sajan","Krijan","Sanjeev","Avishesh","Ram"];
+var a = name.length;
+a = Math.floor(Math.random()*a);
+console.log(name[a]+" is going to buy lunch today");
+}
+
+whosPaying();
