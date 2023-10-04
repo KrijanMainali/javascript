@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <style>
+      body {
+        background-color: #393e46;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container h1 {
+        font-size: 90px;
+        color: #4ecca3;
+        font-weight: 700;
+        font-family: lobster, cursive;
+      }
+      span {
+        color: #4ecca3;
+        font-family: lobster, cursive;
+        margin-inline: 10px;
+        font-size: 20pt;
+      }
+      .container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container div {
+        margin-top: 40px;
+      }
+      img{
+        margin: 22px;
+      }
+      h2{
+        margin-top: 6pt;
+        color: #4ecca3;
+      }
+      button{
+        background-color: aqua;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Refresh Me</h1>
+      <div>
+          <span>Player 1</span><br>
+          <img src="./dice1.png" alt="1" height="100px" id="img1"><br>
+          <span> Player 2</span><br>
+          <img src="./dice2.png" alt="2" height="100px" id="img2">
+      </div>
+      <button onclick="randomImage()">CLICK</button>
+      <h2></h2>
+    </div>
+    <script>
+        function randomImage()
+        {
+        var dicea = Math.ceil(Math.random()*6);
+        document.getElementById("img1").setAttribute("src","./dice"+dicea+".png");
+        var diceb = Math.ceil(Math.random()*6);
+        document.getElementById("img2").setAttribute("src","./dice"+diceb+".png");
+        if(dicea>diceb)
+        {
+            document.querySelector("h2").textContent = "Player1 won";
+        }
+        else if(diceb>dicea)
+        {
+            document.querySelector("h2").textContent = "Player2 won";
+        }
+        else
+        {
+            document.querySelector("h2").textContent = "Draw!!";
+        }
+        }
+    </script>
+  </body>
+</html>
