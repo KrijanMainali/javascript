@@ -1,0 +1,25 @@
+function add(n1, n2)
+{
+    return n1+n2;
+}
+function sub(n1,n2)
+{
+    return n1-n2;
+}
+function multiply(n1,n2)
+{
+    return n1*n2;
+}
+function divide(n1,n2)
+{
+    return n1/n2;
+}
+
+function calculator(num1 , num2, operator)
+{
+    return operator(num1 , num2);
+}
+
+calculator(1,2,add);
+calculator(1,5,sub);
+
