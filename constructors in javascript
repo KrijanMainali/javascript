@@ -1,0 +1,10 @@
+function Person (name,age,height)
+    {
+            this.name = name,
+            this.age = age,
+            this.height = height
+    }
+
+var person1 =new Person ("krijan",20,5);
+console.log(person1.name);
+console.log(person1.age);
